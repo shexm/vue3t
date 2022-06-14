@@ -1,0 +1,23 @@
+{
+    "defineProps": {
+        "scope": "typescript",
+        "prefix": "dfp",
+        "body": ["defineProps<{$1: $2}>()"],
+        "description": "输入dfp补全defineProps"
+    },
+    "defineEmits": {
+        "scope": "typescript",
+        "prefix": "dfe",
+        "body": ["defineEmits<[$1]>()"],
+        "description": "输入dfe补全defineEmits"
+    },
+    "beforeEach": {
+        "scope": "typescript,javascript",
+        "prefix": "beforeEach",
+        "body": ["router.beforeEach((to, from, next) => {",
+            "\t$1",
+        "})"],
+        "description": "设置全局前置路由守卫"
+    }
+
+}
